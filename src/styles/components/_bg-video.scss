@@ -1,0 +1,33 @@
+.bg-video {
+  position: absolute;
+  top: -52px;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.bg-video__about {
+  //position: absolute;
+  left: 0;
+  top: 79px;
+  width: 100%;
+  //z-index: -1;
+  height: 87vh;
+  object-fit: fill;
+}
+.play-click {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  cursor: pointer;
+}
+.video-about , .parent_layer
+{
+  position: absolute;
+  height: 100%;
+}
+
+

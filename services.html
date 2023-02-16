@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/*" href="/public/icons/huppe-logo-white.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <style>
+        .video-container
+        {
+            position: relative;
+        }
+        .video
+        {
+            flex: 0 0 50%;
+            width: 50%;
+            object-fit: cover;
+            object-position: center;
+            z-index: 1;
+            opacity: 0;
+            position: absolute;
+            height: 100%;
+            object-fit: cover;
+        }
+        .video:hover
+        {
+
+            opacity: 1;
+        }
+        img
+        {
+            z-index: 0;
+        }
+
+
+    </style>
+    <title>Huppe and Co.</title>
+</head>
+
+<body id="body">
+<div id="header-shadow"></div>
+    <header class="section-hero">
+        <div class="fixed-header">
+            <nav class="nav">
+                <div class="nav__logo">
+                   <a href="./index.html">
+                       <img src="/icons/huppe-logo-white.png" alt="huppe">
+                   </a> 
+                </div>
+    
+                <div class="nav__mobile">
+                    <input type="checkbox" class="nav__mobile__checkbox" id="navi-toggle">
+    
+                    <label for="navi-toggle" class="nav__mobile__button">
+                        <span class="nav__mobile__icon">&nbsp;</span>
+                    </label>
+    
+                    <div class="nav__mobile__background">&nbsp;</div>
+    
+                    <nav class="nav__mobile__nav">
+                        <ul class="nav__mobile__list">
+                            <li class="nav__mobile__item">
+                                <a href="/index.html" class="nav__mobile__link">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav__mobile__item">
+                                <a href="/about.html" class="nav__mobile__link">
+                                    About
+                                </a>
+                            </li>
+                            <li class="nav__mobile__item">
+                                <a href="/services.html" class="nav__mobile__link">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav__mobile__item">
+                                <a href="/services.html" class="nav__mobile__link">
+                                    Portfolio
+                                </a>
+                            </li>
+                            <li class="nav__mobile__item">
+                                <a href="/contact-us.html" class="nav__mobile__link">
+                                    Contact us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <ul class="nav__pages">
+                    <li class="nav__pages-link">
+                        <a href="/about.html">
+                            <span class="m-circle"></span>
+                            <span class="nav__pages-link-title">
+                                about
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__pages-link">
+                        <a href="/services.html">
+                            <span class="m-circle"></span>
+                            <span class="nav__pages-link-title">
+                                services
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__pages-link">
+                        <a href="">
+                            <span class="m-circle"></span>
+                            <span class="nav__pages-link-title">
+                                portfolio
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav__pages-link">
+                        <a href="/contact-us.html">
+                            <span class="m-circle"></span>
+                            <span class="nav__pages-link-title">
+                                contact us
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="nav__social">
+                    <li class="nav__social-link">
+                        <a href="">
+                            <img src="/icons/phone-icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li class="nav__social-link">
+                        <a href="">
+                            <img src="/icons/fb-icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li class="nav__social-link">
+                        <a href="">
+                            <img src="/icons/instgram-icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li class="nav__social-link">
+                        <a href="">
+                            <img src="/icons/linkedin-icon.png" alt="icon">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./icons/tiktok.png" onmouseover="this.src='./icons/tiktokhover.png';" onmouseleave="this.src='./icons/tiktok.png';" alt="icon">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="section-hero__content" style="">
+            <h1>SERVICES |</h1>
+            <p>
+                With high-impact strategies, win-win partnerships, and compelling content we will exceed your
+                expectations! These are some of the services we offer.
+            </p>
+        </div>
+    </header>
+
+    <main class="section-services">
+        <section class="section-services__wrapper video-container">
+            <img src="/public/files/service-bg-1.png" alt="service" loading="lazy" style="">
+            <video class="video" src="/public/files/services_unique.mp4" muted loop ></video>
+            </div>
+            <div class="section-services__wrapper-content">
+                 <p>Strategic</p>
+                <ul>
+                    <li>
+                        Strategy Development
+                    </li>
+                    <li>
+                        Sales & Marketing
+                        Alignment
+                    </li>
+                    <li>
+                        Branding
+                    </li>
+                    <li>
+                        Inbound Marketing
+                    </li>
+                    <li>
+                        Affiliate Marketing
+                    </li>
+                    <li>
+                        Influencer Marketing
+                    </li>
+                </ul>
+                <a href="/service-unique.html" class="section-figures__wrapper-link">
+                    Find about more
+                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
+                    </svg>
+                </a>
+
+            </div>
+        </section>
+        <section class="section-services__wrapper video-container">
+            <div class="section-services__wrapper-content">
+                  <p>Creative</p>
+                <ul>
+                    <li>
+                        Logo & Brand Identity
+                    </li>
+                    <li>
+                        Website Content
+                    </li>
+                    <li>
+                        Social Media Content
+                    </li>
+                    <li>
+                        Video & Animation
+                    </li>
+                    <li>
+                        Print Design
+                    </li>
+                    <li>
+                        Packaging & Covers
+                    </li>
+
+
+                </ul>
+
+                <a href="/service-unique.html" class="section-figures__wrapper-link">
+                    Find about more
+                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
+                    </svg>
+                </a>
+            </div>
+            <img src="/public/files/service-bg-2.png" alt="service" loading="lazy">
+            <video class="video" src="/public/files/services_unique.mp4" muted loop autoplay ></video>
+
+        </section>
+        <section class="section-services__wrapper video-container">
+            <img src="/public/files/service-bg-3.png" alt="service" loading="lazy">
+            <video class="video" src="/public/files/services_unique.mp4" autoplay muted loop ></video>
+
+            <div class="section-services__wrapper-content" style=":hover{cursor: pointer}">
+                   <p>Unique</p>
+                <ul>
+                    <li>
+                        Public Figure Branding
+                    </li>
+                    <li>
+                        Electronic Press Kit
+                    </li>
+                    <li>
+                        Album Covers
+                    </li>
+                    <li>
+                        Animated NFT Art
+                    </li>
+                    <li>
+                        Graphics for Streamers
+                    </li>
+                    <li>
+                        Digital Look Books
+                    </li>
+                    <li>
+                        Animated Brand Mascots
+                    </li>
+                </ul>
+                <a href="/service-unique.html" class="section-figures__wrapper-link">
+                    Find about more
+                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-sub">
+        <ul>
+            <li class="heading"> Links </li>
+            <li>
+                <a href="">
+                    About Us
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Services
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    Contact Us
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="heading"> KEEP IN TOUCH </li>
+            <li>
+                <img src="./files/fb.png">
+                <a href="">
+                    <span>   Facebook </span>
+                </a>
+            </li>
+            <li>
+                <img src="./files/inst 1.png">
+                <a href="">
+                    <span>  Instagram </span>
+                </a>
+            </li>
+            <li>
+                <img src="./files/linkedin.png">
+                <a href="">
+                    <span> LinkedIn </span>
+                </a>
+            </li>
+
+            <li>
+                <img src="./files/tiktok-share-icon-black-logo-29FFD062A0-seeklogo 1.png">
+                <a href="">
+                    <span> Tiktok </span>
+                </a>
+            </li>
+        </ul>
+        <ul>
+            <li class="heading"> INFORMATION </li>
+            <li>
+                <img src="./files/phone 2.png">
+                <span> +971 60056223 </span>
+            </li>
+            <li>
+                <img src="./files/email icon 1.png">
+                <span>   info@huppeandco </span>
+            </li>
+            <li>
+                <div class="street">
+                    <img src="./files/map_icon 1.png">
+
+
+                    <p class="street"> Warehouse 2, 6A Street,</p>
+                </div>
+                <div class="info">
+                    <p> Al Quoz industrial Area 3, </p>
+                    Dubai, UAE </span>
+                </div>
+                </div>
+            </li>
+        </ul>
+
+    </footer>
+
+    <div class="copyright">
+        <span>© 2023 Huppé & Co.</span>
+    </div>
+
+
+<div id="delaunay">
+    <div id="output"></div>
+</div>
+<div id="controls" class="controls"></div>
+<!-- <canvas id="noise"></canvas> -->
+
+<style>
+
+    #delaunay
+    {
+        z-index: -10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200vh;
+        pointer-events: none;
+    }
+
+    #controls
+    {
+        display: none;
+    }
+    #noise
+    {
+        z-index: -9;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #header-shadow
+    {
+        z-index: 500;
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        height: 250px;
+        background-image: linear-gradient(black 0%, black 20%, transparent 100%);
+        filter: blur(25px);
+    }
+
+
+</style>
+
+<script src="/delaunay.js"></script>
+<!-- <script src="/noise.js"></script> -->
+<script>
+    window.addEventListener('load', () => {
+        console.clear();
+        gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+        var timeline = gsap.timeline({
+            defaults: {ease: 'none'}
+        });
+
+        const timing = [];
+        const charsArray = [];
+        const charTime = 200/1.35;
+        const charStagger = 50/1.35;
+        const visibilityTime = 1500/1.35;
+        const sentencesSelector = [
+            '#we-raise-your-value',
+            '#catalyst-for-change',
+            '#co-creator-of-vision',
+            '#your-change-agent'
+        ];
+        const delaunaySelector = '#delaunay';
+        const noiseSelector = '#noise';
+        const wrapperSelector = '#main-wrapper';
+        const logoSelector = '.section-hero__title';
+
+        const sentences = document.querySelectorAll(sentencesSelector.toString());
+        sentences.forEach((sentence) => {
+            charsArray.push(sentence.querySelectorAll('.cls-2 > .cls-3'));
+        });
+        const charsAll = gsap.utils.toArray(charsArray);
+        const lineContainer = document.querySelector('#line-path');
+        const line = document.querySelector('#line-path > path');
+        const lineSMContainer = document.querySelector('#line-path-sm');
+        const lineSM = document.querySelector('#line-path-sm > path');
+        const delaunay = document.querySelector(delaunaySelector);
+        const noise = document.querySelector(noiseSelector);
+        const wrapper = document.querySelector(wrapperSelector);
+        const sections = document.querySelectorAll(sectionsSelector.toString());
+
+
+
+    });
+</script>
+
+    <script type="module" src="/services.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script>
+    const videoContainer = document.querySelector('.video-container');
+    const video = videoContainer.querySelector('.video');
+
+    videoContainer.addEventListener('mouseenter', () => {
+        video.play();
+    });
+
+    videoContainer.addEventListener('mouseleave', () => {
+        video.pause();
+    });
+</script>
+</body>
+
+</html>

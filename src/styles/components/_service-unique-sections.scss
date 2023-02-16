@@ -1,0 +1,261 @@
+.section {
+
+    &-hero {
+    &__content {
+      color: $color-white;
+      position: relative;
+      padding: 0 20rem;
+      padding-bottom: 15rem;
+      //height: 70vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      //@include backgroundImage("/public/files/main-bg.png");
+      @include respond(tab-port) {
+        padding: 0 3rem;
+        padding-block: 30rem;
+        justify-content: center;
+      }
+
+      &-img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 80%, 100% 0);
+        clip-path: polygon(0 0, 100% 80%, 100% 0);
+      }
+
+      h1 {
+        z-index: 10;
+        white-space: nowrap;
+        padding-bottom: 4rem;
+        font-weight: lighter;
+        span:nth-child(1) {
+          font-size: 3rem;
+        }
+        span:nth-child(2) {
+          font-size: 5rem;
+        }
+      }
+      p {
+        z-index: 10;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        max-width: 50rem;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  &-figures {
+    padding: 0rem 20rem;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10rem;
+    @include respond(tab-port) {
+      padding: 0 3rem 10rem 3rem;
+    }
+
+    &__wrapper {
+      background: #1a1a1ae8;
+      color: $color-white;
+      text-align: left;
+      border-radius: 4px;
+      padding: 20px;
+      max-width: calc((100% - 20px) / 2);
+      @include respond(tab-port) {
+        max-width: 100%;
+      }
+      &-brand{
+        color: #fff;
+      }
+
+      &-title {
+        font-size: 2.1rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+      }
+      &-descr {
+        font-size: 1.4rem;
+        font-weight: lighter;
+        line-height: 1.3;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+      }
+      &-link {
+        color: $color-pink;
+        font-size: 1.3rem;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        svg {
+          padding-top: 5px;
+          path {
+            stroke: $color-pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 900px)
+{
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 450px) {
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 600px)
+{
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px)
+{
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 900px)
+{
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+    height: 90vh;
+  }
+
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1000px)
+{
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+    height: 90vh;
+  }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1000px)
+{
+  .section-hero__content
+  {
+    padding: 0 3rem;
+    padding-block: 30rem;
+    height: 90vh;
+  }
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1300px)
+{
+  .section-hero__content
+  {
+    height: 50vh;
+    padding-bottom: 10rem;
+  }
+
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1700px)
+{
+  .section-hero__content
+  {
+    height: 70vh;
+    padding-bottom: 10rem;
+  }
+  .section-figures
+  {
+    padding-top: 5rem;
+  }
+
+}
+
+
+@media (min-width : 1700px)
+{
+  .section-hero__content
+  {
+    //padding: 0 3rem;
+    padding-block: 30rem;
+
+  }
+}
+
+.section-hero__content
+{
+  margin-top: 9rem;
+}
+
+.section-hero
+{
+  height: auto !important;
+}
+
+.section-hero__content
+{
+  margin-top: 9rem;
+}
+.section-hero__content
+{
+  margin-top: 9rem;
+}
+
+.video-container
+{
+  position: relative;
+}
+.video
+{
+  flex: 0 0 50%;
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+}
+.video:hover
+{
+
+  opacity: 1;
+}
+img
+{
+  z-index: 0;
+}

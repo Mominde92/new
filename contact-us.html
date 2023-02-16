@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/*" href="/public/icons/huppe-logo-white.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <title>Huppe and Co.</title>
+</head>
+
+<body>
+
+<div>
+    <header class="section-hero">
+        <nav class="nav">
+            <div class="nav__logo">
+                <a href="./index.html">
+                    <img src="/icons/huppe-logo-white.png" alt="huppe">
+                </a>
+            </div>
+
+            <div class="nav__mobile">
+                <input type="checkbox" class="nav__mobile__checkbox" id="navi-toggle">
+
+                <label for="navi-toggle" class="nav__mobile__button" style="position: absolute;">
+                    <span class="nav__mobile__icon">&nbsp;</span>
+                </label>
+
+                <div class="nav__mobile__background" style="height: 6rem;width: 6rem;border-radius: 50%;position: inherit;top: 6.5rem;right: 6.5rem;z-index: 1000;transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);">&nbsp;</div>
+
+                <nav class="nav__mobile__nav">
+                    <ul class="nav__mobile__list">
+                        <li class="nav__mobile__item">
+                            <a href="/index.html" class="nav__mobile__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav__mobile__item">
+                            <a href="/about.html" class="nav__mobile__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav__mobile__item">
+                            <a href="/services.html" class="nav__mobile__link">
+                                Services
+                            </a>
+                        </li>
+                        <li class="nav__mobile__item">
+                            <a href="/services.html" class="nav__mobile__link">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__mobile__item">
+                            <a href="/contact-us.html" class="nav__mobile__link">
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <ul class="nav__pages">
+                <li class="nav__pages-link">
+                    <a href="/about.html">
+                        <span class="m-circle"></span>
+                        <span class="nav__pages-link-title">
+                            About
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__pages-link">
+                    <a href="/services.html">
+                        <span class="m-circle"></span>
+                        <span class="nav__pages-link-title">
+                            services
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__pages-link">
+                    <a href="">
+                        <span class="m-circle"></span>
+                        <span class="nav__pages-link-title">
+                            portfolio
+                        </span>
+                    </a>
+                </li>
+                <li class="nav__pages-link">
+                    <a href="">
+                        <span class="m-circle"></span>
+                        <span class="nav__pages-link-title">
+                            contact us
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="nav__social">
+                <li class="nav__social-link">
+                    <a href="">
+                        <img src="/icons/phone-icon.png" alt="icon">
+                    </a>
+                </li>
+                <li class="nav__social-link">
+                    <a href="">
+                        <img src="/icons/fb-icon.png" alt="icon">
+                    </a>
+                </li>
+                <li class="nav__social-link">
+                    <a href="">
+                        <img src="/icons/instgram-icon.png" alt="icon">
+                    </a>
+                </li>
+                <li class="nav__social-link">
+                    <a href="">
+                        <img src="/icons/linkedin-icon.png" alt="icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./icons/tiktok.png" onmouseover="this.src='./icons/tiktokhover.png';" onmouseleave="this.src='./icons/tiktok.png';" alt="icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+
+    <main class="section-contact">
+        <form class="section-contact__form">
+            <h1 class="section-contact__form-title">LETS TALK...</h1>
+
+            <label class="section-contact__form-label" for="first-name">First Name</label>
+            <input class="section-contact__form-input" autocomplete="off" type="text" name="first-name" id="first-name">
+
+            <label class="section-contact__form-label" for="last-name">Last Name</label>
+            <input class="section-contact__form-input" autocomplete="off" type="text" name="last-name" id="last-name">
+
+            <label class="section-contact__form-label" for="company-name">Company Name</label>
+            <input class="section-contact__form-input" autocomplete="off" type="text" name="company-name"
+                id="company-name">
+
+            <label class="section-contact__form-label" for="phone-number">Phone Number</label>
+            <input class="section-contact__form-input" autocomplete="off" type="text" name="phone-number"
+                id="phone-number">
+
+            <label class="section-contact__form-label" for="email">Email</label>
+            <input class="section-contact__form-input" autocomplete="off" type="email" name="email" id="email">
+
+            <label class="section-contact__form-label" for="help">How can we help you?</label>
+            <input class="section-contact__form-input" autocomplete="off" type="text" name="help" id="help">
+
+            <label class="section-contact__form-label" for="about-project">Tell us about your project</label>
+            <textarea class="section-contact__form-textarea" name="about-project" id="about-project" cols="30"
+                rows="10"></textarea>
+
+            <button class="section-contact__form-button" type="submit">SUBMIT</button>
+        </form>
+
+        <div class="section-contact__details">
+            <p class="section-contact__details-title">Or come say hi...</p>
+
+            <p class="section-contact__details-subtitle">Al Qouz Industrial Area 3</p>
+            <p class="section-contact__details-subtitle">P.O. BOX: 450894</p>
+            <p class="section-contact__details-subtitle">Dubai UAE</p>
+
+            <div class="section-contact__details-social">
+<!--                <p>FOLLOW US</p>-->
+
+<!--                <ul class="nav__social">-->
+<!--                    <li class="nav__social-link">-->
+<!--                        <a href="">-->
+<!--                            <img src="/icons/phone-icon.png" alt="icon">-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav__social-link">-->
+<!--                        <a href="">-->
+<!--                            <img src="/icons/fb-icon.png" alt="icon">-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav__social-link">-->
+<!--                        <a href="">-->
+<!--                            <img src="/icons/instgram-icon.png" alt="icon">-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                    <li class="nav__social-link">-->
+<!--                        <a href="">-->
+<!--                            <img src="/icons/linkedin-icon.png" alt="icon">-->
+<!--                        </a>-->
+<!--                    </li>-->
+
+<!--                    <li>-->
+<!--                        <a href="">-->
+<!--                            <img src="./public/icons/tiktok.png" onmouseover="this.src='./public/icons/tiktokhover.png';" onmouseleave="this.src='./public/icons/tiktok.png';" alt="icon">-->
+<!--                        </a>-->
+<!--                    </li>-->
+<!--                </ul>-->
+            </div>
+        </div>
+    </main>
+
+<div id="delaunay">
+    <div id="output"></div>
+</div>
+<div id="controls" class="controls"></div>
+<!-- <canvas id="noise"></canvas> -->
+
+<style>
+
+    #delaunay
+    {
+        z-index: -10;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200vh;
+        pointer-events: none;
+    }
+
+    #controls
+    {
+        display: none;
+    }
+    #noise
+    {
+        z-index: -9;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    #header-shadow
+    {
+        z-index: 500;
+        position: fixed;
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        height: 250px;
+        background-image: linear-gradient(black 0%, black 20%, transparent 100%);
+        filter: blur(25px);
+    }
+
+
+
+
+
+</style>
+
+<script src="/delaunay.js"></script>
+<!-- <script src="/noise.js"></script> -->
+<script>
+    window.addEventListener('load', () => {
+        console.clear();
+        gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+        var timeline = gsap.timeline({
+            defaults: {ease: 'none'}
+        });
+
+        const timing = [];
+        const charsArray = [];
+        const charTime = 200/1.35;
+        const charStagger = 50/1.35;
+        const visibilityTime = 1500/1.35;
+        const sentencesSelector = [
+            '#we-raise-your-value',
+            '#catalyst-for-change',
+            '#co-creator-of-vision',
+            '#your-change-agent'
+        ];
+        const delaunaySelector = '#delaunay';
+        const noiseSelector = '#noise';
+        const wrapperSelector = '#main-wrapper';
+        const logoSelector = '.section-hero__title';
+
+        const sentences = document.querySelectorAll(sentencesSelector.toString());
+        sentences.forEach((sentence) => {
+            charsArray.push(sentence.querySelectorAll('.cls-2 > .cls-3'));
+        });
+        const charsAll = gsap.utils.toArray(charsArray);
+        const lineContainer = document.querySelector('#line-path');
+        const line = document.querySelector('#line-path > path');
+        const lineSMContainer = document.querySelector('#line-path-sm');
+        const lineSM = document.querySelector('#line-path-sm > path');
+        const delaunay = document.querySelector(delaunaySelector);
+        const noise = document.querySelector(noiseSelector);
+        const wrapper = document.querySelector(wrapperSelector);
+        const sections = document.querySelectorAll(sectionsSelector.toString());
+
+
+
+    });
+</script>
+
+
+    <script type="module" src="/contact-us.js"></script>
+</body>
+
+</html>

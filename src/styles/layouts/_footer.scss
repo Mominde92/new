@@ -1,0 +1,120 @@
+.footer {
+  &-main {
+    padding: 32rem 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-right: 10rem;
+
+      li {
+        &,
+        a {
+          color: $color-white;
+          font-size: 1.8rem;
+          font-weight: lighter;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+          //  color: $color-pink;
+          }
+        }
+      }
+    }
+
+    p {
+      padding-right: 10rem;
+      color: $color-white;
+    }
+
+    @include respond(tab-port) {
+      padding: 6rem 4rem 4rem 4rem;
+      text-align: center;
+      ul {
+        padding: 0;
+      }
+      p {
+        padding: 0;
+      }
+    }
+  }
+  &-sub {
+      background: #1a1a1ae8;
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    padding: 10rem 15rem 4rem 15rem;
+      line-height: 25px;
+
+    @include respond(tab-port) {
+      padding: 4rem;
+      flex-direction: column;
+    }
+
+    ul {
+      li {
+        img
+        {
+          margin-right: 1.5rem;
+          cursor: pointer;
+        }
+        &,
+        a {
+          font-size: 18px;
+          color: $color-white;
+          transition: all 0.3s ease-in-out;
+          white-space: nowrap;
+          &:not(:last-child) {
+            padding-bottom: 20px;
+          }
+          &:hover {
+       //     color: $color-pink;
+          }
+        }
+      }
+    }
+  }
+}
+.copyright
+{
+    text-align: center;
+    background: #1a1a1ae8;
+}
+.copyright span
+{
+    font-style: normal;
+    background: #1a1a1ae8;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    text-align: center !important;
+}
+.street
+{
+    display: inline;
+}
+
+.heading
+{
+  font-size: 22px !important; ;
+  font-weight: bold;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.info
+{
+  margin-left: 3.5rem;
+}
+
