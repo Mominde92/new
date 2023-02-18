@@ -11,3 +11,93 @@
 .nav__pages-link:hover .m-circle {
   background: $color-white;
 }
+.tw-event-pointer-none {
+  pointer-events: none;
+}
+.tw-event-pointer-fill {
+  pointer-events: fill;
+}
+.tw-w-full {
+  width: 100%;
+}
+.tw-flex {
+  display: flex;
+}
+.tw-py-rem {
+  padding-block: 1rem;
+}
+.tw-py-3rem {
+  padding-block: 3rem;
+}
+.tw-px-rem {
+  padding-inline: 1rem;
+}
+.tw-color-white {
+  color: white;
+}
+.tw-text-center {
+  text-align: center;
+}
+.tw-align-center {
+  align-items: center;
+}
+.tw-justify-center {
+  justify-content: center;
+}
+.tw-h-70vh {
+  height: 75vh;
+}
+.tw-h-fill {
+  height: 100%;
+}
+.tw-font-2rem {
+  font-size: 2rem;
+}
+.tw-font-4rem {
+  font-size: 4rem;
+}
+.tw-mb-1 {
+  margin-bottom: 5px;
+}
+.tw-flex-flow-wrap {
+  flex-flow: wrap;
+}
+
+.tw-col-12 {
+  width: 100%;
+}
+.mh-colors-transition {
+  &:hover {
+    &.tw-onHover-bg-white {
+      background-color: $color-white;
+      transition: all 0.3s ease-in-out;
+    }
+    .tw-onHover-color-black {
+      color: $color-dark;
+    }
+  }
+  .tw-onHover-color-pink {
+    &:hover {
+      color: $color-light-pink;
+    }
+  }
+}
+
+.tw-order-1 {
+  order: 1;
+}
+.tw-order-2 {
+  order: 2;
+}
+
+@media (min-width: 900px) {
+  .tw-col-md-6 {
+    width: 50%;
+  }
+  .tw-order-md-1 {
+    order: 1;
+  }
+  .tw-order-md-2 {
+    order: 2;
+  }
+}

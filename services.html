@@ -42,17 +42,17 @@
 </head>
 
 <body id="body">
-<div id="header-shadow"></div>
+<div id="header-shadow" class="tw-event-pointer-none"></div>
     <header class="section-hero">
-        <div class="fixed-header">
+        <div class="fixed-header tw-event-pointer-none">
             <nav class="nav">
-                <div class="nav__logo">
+                <div class="nav__logo tw-event-pointer-fill">
                    <a href="./index.html">
                        <img src="/icons/huppe-logo-white.png" alt="huppe">
                    </a> 
                 </div>
     
-                <div class="nav__mobile">
+                <div class="nav__mobile tw-event-pointer-fill">
                     <input type="checkbox" class="nav__mobile__checkbox" id="navi-toggle">
     
                     <label for="navi-toggle" class="nav__mobile__button">
@@ -92,7 +92,7 @@
                     </nav>
                 </div>
     
-                <ul class="nav__pages">
+                <ul class="nav__pages tw-event-pointer-fill">
                     <li class="nav__pages-link">
                         <a href="/about.html">
                             <span class="m-circle"></span>
@@ -127,7 +127,7 @@
                     </li>
                 </ul>
     
-                <ul class="nav__social">
+                <ul class="nav__social tw-event-pointer-fill">
                     <li class="nav__social-link">
                         <a href="">
                             <img src="/icons/phone-icon.png" alt="icon">
@@ -167,116 +167,105 @@
     </header>
 
     <main class="section-services">
-        <section class="section-services__wrapper video-container">
-            <img src="/public/files/service-bg-1.png" alt="service" loading="lazy" style="">
-            <video class="video" src="/public/files/services_unique.mp4" muted loop ></video>
-            </div>
-            <div class="section-services__wrapper-content">
-                 <p>Strategic</p>
-                <ul>
-                    <li>
-                        Strategy Development
-                    </li>
-                    <li>
-                        Sales & Marketing
-                        Alignment
-                    </li>
-                    <li>
-                        Branding
-                    </li>
-                    <li>
-                        Inbound Marketing
-                    </li>
-                    <li>
-                        Affiliate Marketing
-                    </li>
-                    <li>
-                        Influencer Marketing
-                    </li>
-                </ul>
-                <a href="/service-unique.html" class="section-figures__wrapper-link">
-                    Find about more
-                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
-                    </svg>
-                </a>
-
-            </div>
-        </section>
-        <section class="section-services__wrapper video-container">
-            <div class="section-services__wrapper-content">
-                  <p>Creative</p>
-                <ul>
-                    <li>
+         <div class="tw-flex tw-flex-flow-wrap">
+            <div class="mh-colors-transition tw-onHover-bg-white  tw-col-12 tw-col-md-6 tw-flex tw-justify-center tw-align-center">
+               <div class="tw-py-3rem">
+                 <div class="tw-py-rem">
+                     <p class=" tw-text-center tw-color-white tw-font-4rem tw-mb-1 tw-py-rem tw-onHover-color-black" >Creative</p>
+                <ul class="tw-text-center tw-color-white tw-font-2rem tw-onHover-color-black ">
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Logo & Brand Identity
                     </li>
-                    <li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Website Content
                     </li>
-                    <li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Social Media Content
                     </li>
-                    <li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Video & Animation
                     </li>
-                    <li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Print Design
                     </li>
-                    <li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
                         Packaging & Covers
                     </li>
 
 
                 </ul>
+                <div class="tw-flex  tw-justify-center">
 
-                <a href="/service-unique.html" class="section-figures__wrapper-link">
-                    Find about more
-                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
-                    </svg>
-                </a>
+                    <a href="/service-unique.html" class="section-figures__wrapper-link ">
+                        Find about more
+                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+                </div> 
+               </div>
             </div>
-            <img src="/public/files/service-bg-2.png" alt="service" loading="lazy">
-            <video class="video" src="/public/files/services_unique.mp4" muted loop autoplay ></video>
+            <div class="tw-col-12 tw-col-md-6">
+                <div class="mh-services-gallery--image-container">
+                    <img class="mh-services-gallery--img" src="/public/files/service-bg-2.png" alt="service" loading="lazy">
+                    
+                 <video class="video mh-services-gallery--image-video"  src="/public/files/services_unique.mp4" muted loop autoplay ></video>
+                </div>
 
-        </section>
-        <section class="section-services__wrapper video-container">
-            <img src="/public/files/service-bg-3.png" alt="service" loading="lazy">
-            <video class="video" src="/public/files/services_unique.mp4" autoplay muted loop ></video>
+            </div>
+        </div>
+         <div class="tw-flex tw-flex-flow-wrap">
+            <div class="tw-order-1 tw-order-md-2 mh-colors-transition tw-onHover-bg-white  tw-col-12 tw-col-md-6 tw-flex tw-justify-center tw-align-center">
+               <div class="tw-py-3rem">
+                 <div class="tw-py-rem">
+                     <p class=" tw-text-center tw-color-white tw-font-4rem tw-mb-1 tw-py-rem tw-onHover-color-black" >Creative</p>
+                <ul class="tw-text-center tw-color-white tw-font-2rem tw-onHover-color-black ">
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Logo & Brand Identity
+                    </li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Website Content
+                    </li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Social Media Content
+                    </li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Video & Animation
+                    </li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Print Design
+                    </li>
+                    <li class="tw-mb-1 tw-py-rem tw-onHover-color-pink ">
+                        Packaging & Covers
+                    </li>
 
-            <div class="section-services__wrapper-content" style=":hover{cursor: pointer}">
-                   <p>Unique</p>
-                <ul>
-                    <li>
-                        Public Figure Branding
-                    </li>
-                    <li>
-                        Electronic Press Kit
-                    </li>
-                    <li>
-                        Album Covers
-                    </li>
-                    <li>
-                        Animated NFT Art
-                    </li>
-                    <li>
-                        Graphics for Streamers
-                    </li>
-                    <li>
-                        Digital Look Books
-                    </li>
-                    <li>
-                        Animated Brand Mascots
-                    </li>
+
                 </ul>
-                <a href="/service-unique.html" class="section-figures__wrapper-link">
-                    Find about more
-                    <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
-                    </svg>
-                </a>
+                <div class="tw-flex  tw-justify-center">
+
+                    <a href="/service-unique.html" class="section-figures__wrapper-link ">
+                        Find about more
+                        <svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 7.19048L1 14" stroke="white" stroke-width="2" />
+                        </svg>
+                    </a>
+                </div>
+                </div> 
+               </div>
             </div>
-        </section>
+            <div class="tw-order-2 tw-order-md-1 tw-col-12 tw-col-md-6 ">
+                <div class="mh-services-gallery--image-container">
+                    <img class="mh-services-gallery--img" src="/public/files/service-bg-2.png" alt="service" loading="lazy">
+                    
+                 <video class="video mh-services-gallery--image-video"  src="/public/files/services_unique.mp4" muted loop autoplay ></video>
+                </div>
+
+            </div>
+            
+            
+        </div>
+        
     </main>
 
     <footer class="footer-sub">

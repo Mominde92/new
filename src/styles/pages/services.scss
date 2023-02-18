@@ -1,12 +1,29 @@
-@import "../abstracts/variables";
-@import "../abstracts/mixins";
-@import "../abstracts/utilities";
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+@import '../abstracts/utilities';
 
-@import "../layouts/top-navbar";
-@import "../layouts/footer";
+@import '../layouts/top-navbar';
+@import '../layouts/footer';
 
-@import "../components/bg-video";
-@import "../components/buttons";
-@import "../components/services-sections";
+@import '../components/bg-video';
+@import '../components/buttons';
+@import '../components/services-sections';
 
-@import "../base/main";
+@import '../base/main';
+
+.mh-services-gallery--image-container {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+}
+.mh-services-gallery--img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.mh-services-gallery--image-video {
+  position: absolute;
+  top: 0;
+  object-fit: cover;
+  width: 100%;
+}
